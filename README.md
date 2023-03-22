@@ -1,5 +1,5 @@
 # Sofia AI
-Sofia AI is a web application that uses the ChatGPT API to create a chatbot that can chat with you like your best friend. It is built using HTML, CSS, and JavaScript.
+Sofia AI is a web application that uses the ChatGPT API to create a chatbot that can chat with you like your best friend. It is built using HTML, CSS, and TypeScript.
 
 ## How to use
 Open the Sofia AI website.
