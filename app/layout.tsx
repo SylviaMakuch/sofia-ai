@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Hero from '../components/Hero'
 import About from '../components/About'
+import Features from '../components/Features'
 
 export const metadata = {
   title: 'Sofia AI',
@@ -23,6 +24,7 @@ export default function RootLayout({
             <body>
               <Hero />
               <About />
+              <Features />
             </body>
           </html>
           )

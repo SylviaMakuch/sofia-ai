@@ -72,11 +72,16 @@ const Button = styled.button`
 `;
 
 const StyledImage = styled(Image)`
-    width: 110%;
+    width: 100%;
     height: 120%%;
     z-index: -1;
     position: relative;
     bottom: 65px;
+    
+   @media(min-device-width: 1200px)  {
+        height: 100%;
+        width: 100%;
+    };
 `;
 
 const StyledHeaderImage = styled(Image)`
