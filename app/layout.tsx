@@ -1,5 +1,4 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import Features from '../components/Features'
@@ -22,7 +21,7 @@ export default function RootLayout({
             <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=K2D:wght@100&family=Orbitron&display=swap" rel="stylesheet" ></link>
             </head>
             <body>
-              <Hero />
+              <div><Hero /></div>
               <About />
               <Features />
             </body>
