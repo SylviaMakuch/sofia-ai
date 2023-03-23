@@ -23,7 +23,7 @@ const TextContainer = styled.div`
 `;
 
 const Header = styled.h1`
-    font-family: Orbitron;
+    font-family: 'Orbitron', sans-serif;
     font-style: normal;
     font-weight: 400;
     color: #FC8CF1;
@@ -33,7 +33,7 @@ const Header = styled.h1`
 `;
 
 const SubHeader = styled.h2`
-    font-family: 'Jura';
+    font-family: 'Jura', sans-serif;
     font-style: normal;
     font-weight: 400;
     color: #BE54F8;
@@ -42,7 +42,7 @@ const SubHeader = styled.h2`
 `;
 
 const SubHeader2 = styled.h3`
-    font-family: 'Jura';
+    font-family: 'Jura', sans-serif;
     font-style: normal;
     font-weight: 500;
     color: #FA772C;
@@ -65,8 +65,6 @@ const Button = styled.button`
         background: linear-gradient(90.14deg, #A53C93 10.31%, #EC3D71 99.95%);
     }
 `;
-
-
 
 export default function Hero() {
     return (
