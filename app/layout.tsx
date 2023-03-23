@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Hero from '../components/Hero'
-
+import About from '../components/About'
 
 export const metadata = {
   title: 'Sofia AI',
@@ -22,6 +22,7 @@ export default function RootLayout({
             </head>
             <body>
               <Hero />
+              <About />
             </body>
           </html>
           )

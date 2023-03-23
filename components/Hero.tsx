@@ -1,21 +1,17 @@
 'use client';
+
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 import peakedhills from '../public/peakedhills.svg';
 import redsofia from '../public/redsofia.png';
 
-
 const PageContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 2rem;
     grid-row-gap: 0px;
     justify-items: center;
-    position: absolute;
-    bottom: 85px;
-    z-index: -2;
 `;
 
 const InnerContainer = styled.div`
@@ -52,7 +48,7 @@ const SubHeader2 = styled.h3`
     color: #FA772C;
     font-size: 1.5rem;
     text-align: center;
-    width: 60%;
+    width: 65%;
 `;
 
 const Button = styled.button`
@@ -64,7 +60,7 @@ const Button = styled.button`
     width: 10rem;
     font-size: 1.2rem;
     text-align: center;
-    background-image: linear-gradient(to right, #EC3D71 0%, #A53C93 51%, #EC3D71 100%);
+    background-image: linear-gradient(to right, #BE54F8 0%, #FA772C 51%, #BE54F8 100%);
     background-size: 200% auto;
     border-radius: 6px; 
     margin: 1.2rem 0; 
@@ -76,8 +72,11 @@ const Button = styled.button`
 `;
 
 const StyledImage = styled(Image)`
-    width: 90%;
-    height: 95%;
+    width: 110%;
+    height: 120%%;
+    z-index: -1;
+    position: relative;
+    bottom: 65px;
 `;
 
 const StyledHeaderImage = styled(Image)`
