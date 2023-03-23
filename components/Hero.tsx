@@ -13,6 +13,9 @@ const PageContainer = styled.div`
     grid-column-gap: 2rem;
     grid-row-gap: 0px;
     justify-items: center;
+    position: absolute;
+    bottom: 85px;
+    z-index: -2;
 `;
 
 const InnerContainer = styled.div`
@@ -39,6 +42,7 @@ const SubHeader = styled.h2`
     color: #BE54F8;
     font-size: 2.5rem;
     text-align: center;
+    margin: 1rem 0;
 `;
 
 const SubHeader2 = styled.h3`
@@ -48,6 +52,7 @@ const SubHeader2 = styled.h3`
     color: #FA772C;
     font-size: 1.5rem;
     text-align: center;
+    width: 60%;
 `;
 
 const Button = styled.button`
@@ -57,13 +62,17 @@ const Button = styled.button`
     color: white;
     height: 3rem;
     width: 10rem;
+    font-size: 1.2rem;
     text-align: center;
-    background: linear-gradient(90.14deg, #EC3D71 10.31%, #A53C93 99.95%);
+    background-image: linear-gradient(to right, #EC3D71 0%, #A53C93 51%, #EC3D71 100%);
+    background-size: 200% auto;
     border-radius: 6px; 
+    margin: 1.2rem 0; 
+    transition: all 0.4s ease-in-out;
 
-    &:hover {
-        background: linear-gradient(90.14deg, #A53C93 10.31%, #EC3D71 99.95%);
-    }
+ &:hover {
+    background-position: right center;
+    cursor: pointer;
 `;
 
 const StyledImage = styled(Image)`
@@ -72,7 +81,8 @@ const StyledImage = styled(Image)`
 `;
 
 const StyledHeaderImage = styled(Image)`
-    width: 100%;
+    width: 100vw;
+    z-index: 1;
 `;
 
 export default function Hero() {
