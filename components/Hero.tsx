@@ -12,14 +12,14 @@ const PageContainer = styled.div`
     grid-template-rows: 1fr;
     grid-column-gap: 2rem;
     grid-row-gap: 0px;
+    justify-items: center;
 `;
 
-const TextContainer = styled.div`
+const InnerContainer = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
 `;
 
 const Header = styled.h1`
@@ -27,7 +27,7 @@ const Header = styled.h1`
     font-style: normal;
     font-weight: 400;
     color: #FC8CF1;
-    size: 5rem;
+    font-size: 4.3rem;
     text-align: center;
     letter-spacing: 0.17em;
 `;
@@ -37,7 +37,7 @@ const SubHeader = styled.h2`
     font-style: normal;
     font-weight: 400;
     color: #BE54F8;
-    size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
 `;
 
@@ -46,12 +46,12 @@ const SubHeader2 = styled.h3`
     font-style: normal;
     font-weight: 500;
     color: #FA772C;
-    size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
 `;
 
 const Button = styled.button`
-    font-family: 'K2D';
+    font-family: 'K2D', sans-serif;
     font-style: normal;
     font-weight: 400;
     color: white;
@@ -66,18 +66,27 @@ const Button = styled.button`
     }
 `;
 
+const StyledImage = styled(Image)`
+    width: 90%;
+    height: 95%;
+`;
+
+const StyledHeaderImage = styled(Image)`
+    width: 100%;
+`;
+
 export default function Hero() {
     return (
         <>
             <Image src={peakedhills} alt='' />
             <PageContainer>
-                <TextContainer>
+                <InnerContainer>
                     <Header>Sofia AI</Header>
                     <SubHeader>Your virtual best friend</SubHeader>
                     <SubHeader2> Empowering Intelligent Conversations with Machine Learning </SubHeader2>
-                    <Button>Get Started</Button>
-                </TextContainer>
-                <Image src={redsofia} alt='' />
+                    <Button>Chat Now</Button>
+                </InnerContainer>
+                <StyledImage src={redsofia} alt='' />
             </PageContainer>
         </>
     );
