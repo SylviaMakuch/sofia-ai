@@ -87,6 +87,12 @@ const StyledImage = styled(Image)`
 const StyledHeaderImage = styled(Image)`
     width: 100vw;
     z-index: 1;
+    position: relative;
+
+    @media(min-device-width: 1200px)  {
+        height: 30%;
+        width: 100vw;
+    };
 `;
 
 export default function Hero() {
