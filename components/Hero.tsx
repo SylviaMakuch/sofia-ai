@@ -106,7 +106,9 @@ export default function Hero() {
                     <SubHeader2> Empowering Intelligent Conversations with Machine Learning </SubHeader2>
                     <Button>Chat Now</Button>
                 </InnerContainer>
+                <div data-aos="zoom-in">
                 <StyledImage src={redsofia} alt='' />
+                </div>
             </PageContainer>
         </>
     );

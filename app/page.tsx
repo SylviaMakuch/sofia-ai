@@ -1,14 +1,14 @@
 'use client';
 
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import styles from './page.module.css'
-import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import Features from '../components/Features'
+import { Controller } from 'react-spring';
 
 interface IParallax {
-  config: ConfigProp
   horizontal: boolean
   busy: boolean
   space: number
@@ -23,18 +23,25 @@ interface IParallax {
   stop(): void
 }
 
+interface IParallaxLayer {
+  horizontal: boolean
+  sticky: StickyConfig
+  isSticky: boolean
+  setHeight(height: number, immediate?: boolean): void
+  setPosition(height: number, scrollTop: number, immediate?: boolean): void
+}
+
 export default function Home() {
   const parallax = useRef<IParallax>(null!)
+  const [height, setHeight] = useState(0)
+  const [position, setPosition] = useState(0)
+
   return (
     <main className={styles.main}>
       <Parallax ref={parallax} pages={3}>
-        <ParallaxLayer offset={1} speed={1} >
-          <Hero />
-        </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={1} >
+        <Hero />
+        <ParallaxLayer offset={0} speed={0} style={{ top: '180'}}>
           <About />
-        </ParallaxLayer>
-        <ParallaxLayer offset={3} speed={1} >
           <Features />
         </ParallaxLayer>
       </Parallax>
