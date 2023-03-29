@@ -32,7 +32,7 @@ import { Controller } from 'react-spring';
 // }
 
 export default function Home() {
-  const parallax = useRef<IParallax>(null!)
+  // const parallax = useRef<IParallax>(null!)
   const [height, setHeight] = useState(0)
   const [position, setPosition] = useState(0)
 

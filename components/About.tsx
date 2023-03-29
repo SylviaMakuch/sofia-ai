@@ -15,6 +15,18 @@ const PageContainer = styled.div`
     font-style: normal;
     font-weight: 100;
     font-size: 1.5rem;
+    line-height: 1.6rem;   
+
+    @media (max-width: 1280px) {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        padding: 8rem;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 0.9rem;
+        padding: 5rem;
+    }
 `;
 
 export default function About() {
